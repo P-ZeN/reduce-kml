@@ -1,0 +1,94 @@
+body {
+    padding: 0 5px 20px 5px !important;
+}
+
+.labelsGmap {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    white-space: nowrap;
+    box-shadow: 2px 2px 5px #666;
+    border-radius: 5px;
+}
+
+#legende_in {
+    display: inline-block;
+    width: 20px;
+    height: 7px;
+    margin-right: 5px;
+    background-color: #00f;
+    border: 2px solid #00f;
+}
+
+#legende_out {
+    display: inline-block;
+    width: 20px;
+    height: 7px;
+    margin-right: 5px;
+    background-color: #0f0;
+    border: 1px solid #0f0;
+}
+
+fieldset.fieldset {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background: #EEE
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+$custom-file-text: ( en: "Browse", es: "Elegir", fr: "Parcourir");
+input[type=file].custom-file-input {
+    cursor: pointer;
+}
+
+.custom-file-label {
+    overflow: hidden
+}
+
+$loader-color: #0052ec !default;
+//$loader-color: $brand-primary;
+$loader-size: 40px !default;
+$loader-height: 10px !default;
+$loader-border-size: 8px !default;
+$loader-gap: 12px !default;
+$loader-animation-duration: 1s !default;
+.loader12 {
+    z-index: 999999;
+    @include loader12( $size: 10px, $gap: 10px, $duration: 1s, $align: middle);
+}
+
+#langSelect option[value="fr"] {
+    background-image: url('../images/fr.gif') no-repeat left center;
+    padding-left: 50px;
+}
+
+#langSelect option[value="en"] {
+    background-image: url('../images/en.gif') no-repeat left center !important;
+    padding-left: 50px !important;
+}
